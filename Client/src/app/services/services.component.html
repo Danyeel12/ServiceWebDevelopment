@@ -1,0 +1,20 @@
+<div class="container text-center mt-5">
+    <h2>Our Services</h2>
+    <p class="mt-3 mb-5">
+        Spider Web Dev offers a wide range of services to meet your business needs. 
+        We have a team of experience developers who can analyze your requirements and translate it into amazing software. 
+        Read about our services by clicking any of the images below.
+    </p>
+    <div class="card-deck">
+      <div class="card mb-4" *ngFor="let service of services">
+        <div class="card-body">
+          <h5 class="card-title">{{ service.name }}</h5>
+          <div class="card-text" (click)="toggleDescription(service)">
+            <img *ngIf="!service.displayDescription" [src]="service.image" class="img-fluid">
+            <p *ngIf="service.displayDescription">{{ service.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

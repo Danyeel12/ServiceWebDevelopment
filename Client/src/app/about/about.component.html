@@ -1,0 +1,18 @@
+<div class="container text-center mt-5">
+    <h2>About Us</h2>
+    <p class="mt-3 mb-5">
+      We are a team of 7 software developers. Check out everyone from our team below!
+    </p>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let member of members">
+        <div class="card mb-4">
+          <img [src]="member.headshot" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">{{ member.name }}</h5>
+            <p class="card-text">{{ member.bio }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
