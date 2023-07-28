@@ -15,8 +15,25 @@
           <a class="nav-link" routerLink="/services"><b>Services</b></a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" routerLink="/reviews"><b>Reviews</b></a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" routerLink="/contact"><b>Contact Us</b></a>
         </li>
+
+        <li class="nav-item" *ngIf="authService.isLoggedIn(); else loginLink">
+          <a class="nav-link">
+            <i class="fas fa-user"></i> {{ authService.getUser()?.fname }}
+          </a>
+        </li>
+        <ng-template #loginLink>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/login">
+              <fa-icon [icon]="faUser"></fa-icon>
+              Login
+            </a>
+          </li>
+        </ng-template>
       </ul>
     </div>
   </nav>
