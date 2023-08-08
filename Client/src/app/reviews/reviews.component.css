@@ -1,0 +1,13 @@
+.container {
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  h2 {
+    font-family: "Helvetica", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}

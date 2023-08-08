@@ -1,0 +1,25 @@
+.home-bg {
+    background: url('/assets/images/home.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #welcome-msg{
+    padding: 25px 30px 30px;
+
+  }
+  
+  .home-content {
+    color: white;
+  }
+  

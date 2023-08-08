@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <h2 class="row justify-content-center">Register</h2>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <div class="mb-3">
+            <label for="fname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="fname" formControlName="fname" required placeholder="First Name">
+          </div>
+          <div class="mb-3">
+            <label for="lname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lname" formControlName="lname" required placeholder="Last Name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email" required placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" formControlName="password" required placeholder="Minimum 6 Digits Password">
+          </div>
+          <button type="submit" class="btn btn-primary" click="onSubmit()">Register an account!</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

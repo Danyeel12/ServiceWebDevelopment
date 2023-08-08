@@ -1,0 +1,50 @@
+<div class="container mt-5 w-50 p-3 align-items-center justify-content-center">
+    <h2 >Contact Us</h2>
+    <br>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      
+    <div class = "row">
+        <div class = "col">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" formControlName="firstName" placeholder = "Your first name">
+      </div>
+    
+      <div class="col">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" formControlName="lastName" placeholder="Your last name">
+      </div>
+    </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter your email here. E.g., youremail@gmail.com">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" class="form-control" id="phone" formControlName="phone" placeholder="Your phone number. E.g. 4163452746">
+      </div>
+      <div class="form-group">
+        <label for="inquiryTitle">Inquiry Title</label>
+        <input type="text" class="form-control" id="inquiryTitle" formControlName="inquiryTitle" placeholder="Enter the subject">
+      </div>
+      <div class="form-group">
+        <label for="inquiryType">Inquiry Type</label>
+        <select class="form-control" id="inquiryType" formControlName="inquiryType" placeholder="Select the type of inquiry">
+          <option>Website</option>
+          <option>API</option>
+          <option>AI Predictive Model</option>
+          <option>Consultation</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="budget">Budget (optional)</label>
+        <input type="text" class="form-control" id="budget" formControlName="budget" placeholder="Enter your budget if you have one">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="3" formControlName="message" placeholder="Describe your needs "></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  
